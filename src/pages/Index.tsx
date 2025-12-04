@@ -86,14 +86,11 @@ const Index = () => {
       <header className="border-b border-border bg-white sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="relative">
-              <h1 className="text-2xl font-bold text-primary tracking-tight">
-                ОНЛАЙН АКАДЕМИЯ
-              </h1>
-              <div className="absolute -top-1 right-0 w-3 h-3 bg-secondary rounded-full transform rotate-12" 
-                   style={{ clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)' }}>
-              </div>
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/projects/5c137915-90de-439e-9b97-d54f1218908b/files/70d0e0bf-5b29-461d-918d-22e30d3e1357.jpg"
+              alt="ОНЛАЙН АКАДЕМИЯ"
+              className="h-12 w-auto"
+            />
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Button variant="ghost" onClick={() => setActiveTab('home')} className={activeTab === 'home' ? 'text-primary' : ''}>
